@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c16d7a2b-b82f-4137-bd7a-76464eefe5f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/PythonInOneSheet.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/productOfNum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/names/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/names/full_names.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/names/names.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/All-In-One.py" beforeDir="false" afterPath="$PROJECT_DIR$/All-In-One.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +41,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -108,7 +108,8 @@
       <option name="presentableId" value="Default" />
       <updated>1617650442337</updated>
       <workItem from="1617650443454" duration="4659000" />
-      <workItem from="1617747588490" duration="6946000" />
+      <workItem from="1617747588490" duration="7362000" />
+      <workItem from="1617827986880" duration="5639000" />
     </task>
     <servers />
   </component>
@@ -120,14 +121,29 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PythonInOneSheet$All_In_One.coverage" NAME="All-In-One Coverage Results" MODIFIED="1617749600313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonInOneSheet$All_In_One.coverage" NAME="All-In-One Coverage Results" MODIFIED="1617839958304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

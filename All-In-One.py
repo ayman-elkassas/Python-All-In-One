@@ -115,20 +115,26 @@ def greet_user():
     """Display a simple greeting."""
     print("hello!")
 
+
 greet_user()
+
 
 def greet_user(username):
     """Display a personalized greeting."""
     print("Hello, " + username + "!")
 
+
 greet_user('jesse')
+
 
 def make_pizza(topping='bacon'):
     """Make a single-topping pizza."""
     print("Have a " + topping + " pizza!")
 
+
 make_pizza()
 make_pizza('pepperoni')
+
 
 def add_numbers(x, y):
     """Add two numbers and return the sum."""
@@ -155,6 +161,7 @@ class Dog():
 my_dog = Dog('Peso')
 print(my_dog.name + "is a greet dog!")
 my_dog.sit()
+
 
 # todo:inheritance
 class SARDog(Dog):
@@ -183,7 +190,7 @@ for line in lines:
 
 # Writing File
 filename = 'journal.txt'
-with open(filename,'w') as file_object:
+with open(filename, 'w') as file_object:
     file_object.write("I love python")
 
 filename = 'journal.txt'
@@ -217,7 +224,7 @@ users.append('bob')
 users.append('mia')
 
 # add in specific index
-users.insert(0,"aaa")
+users.insert(0, "aaa")
 
 # remove ele of index
 del users[-1]
@@ -249,27 +256,27 @@ users.reverse()
 for user in users:
     print(user)
 
-
 # python module
 from product import productOfNum
+
 productOfNum.person['name']
 
 # range
-for num in range(5): # 0-4
+for num in range(5):  # 0-4
     print(num)
 
 # range(5,10) # 5-9
 # numbers = list(range(1, 1000001))
 
-#min,max
+# min,max
 ages = [93, 99, 66, 17, 85, 1, 35, 82, 2, 77]
 youngest = min(ages)
 
-#sum
+# sum
 ages = [93, 99, 66, 17, 85, 1, 35, 82, 2, 77]
 total_years = sum(ages)
 
-#slicing
+# slicing
 finishers = ['kai', 'abe', 'ada', 'gus', 'zoe']
 first_three = finishers[:3]
 
@@ -277,18 +284,18 @@ first_three = finishers[:3]
 middle_three = finishers[1:4]
 last_three = finishers[-3:]
 
-#copy
+# copy
 finishers = ['kai', 'abe', 'ada', 'gus', 'zoe']
 copy_of_finishers = finishers[:]
 
 squares = []
 for x in range(1, 11):
-    square = x**2
+    square = x ** 2
     squares.append(square)
 
-squares = [x**2 for x in range(1, 11)]
+squares = [x ** 2 for x in range(1, 11)]
 
-make_upper=[name.upper() for name in finishers]
+make_upper = [name.upper() for name in finishers]
 
 # tuple
 # Getting the value associated with a key
@@ -298,7 +305,7 @@ print(alien_0['points'])
 # Getting the value with get()
 alien_0 = {'color': 'green'}
 alien_color = alien_0.get('color')
-alien_points = alien_0.get('points',0)
+alien_points = alien_0.get('points', 0)
 print(alien_color)
 print(alien_points)
 
@@ -320,14 +327,14 @@ for name in sorted(alien_0.keys()):
 # is represented by a dictionary.
 users = [
     {
-    'last': 'fermi',
-    'first': 'enrico',
-    'username': 'efermi',
+        'last': 'fermi',
+        'first': 'enrico',
+        'username': 'efermi',
     },
     {
-    'last': 'curie',
-    'first': 'marie',
-    'username': 'mcurie',
+        'last': 'curie',
+        'first': 'marie',
+        'username': 'mcurie',
     },
 ]
 # Show all information about each user.
@@ -337,6 +344,7 @@ for user_dict in users:
     print("\n")
 
 from collections import OrderedDict
+
 # Store each person's languages, keeping
 # track of who respoded first.
 fav_languages = OrderedDict()
@@ -351,4 +359,149 @@ for name, langs in fav_languages.items():
     for lang in langs:
         print("- " + lang)
 
-# P7
+# if conditions
+banned_users = ['ann', 'chad', 'dee']
+user = 'erin'
+if user not in banned_users:
+    print("You can play!")
+
+players = []
+if players:
+    for player in players:
+        print("Player: " + player.title())
+else:
+    print("We have no players yet!")
+
+name = input("What's your name? ")
+print("Hello, " + name + ".")
+
+age = input("How old are you? ")
+age = int(age)
+if age >= 18:
+    print("\nYou can vote!")
+else:
+    print("\nYou can't vote yet.")
+
+current_number = 1
+while current_number <= 5:
+    print(current_number)
+    current_number += 1
+
+prompt = "\nTell me something, and I'll "
+prompt += "repeat it back to you."
+prompt += "\nEnter 'quit' to end the program. "
+message = ""
+while message != 'quit':
+    message = input(prompt)
+    if message != 'quit':
+        print(message)
+
+# break
+prompt = "\nWhat cities have you visited?"
+prompt += "\nEnter 'quit' when you're done. "
+while True:
+    city = input(prompt)
+    if city == 'quit':
+        break
+    else:
+        print("I've been to " + city + "!")
+
+# continue
+banned_users = ['eve', 'fred', 'gary', 'helen']
+prompt = "\nAdd a player to your team."
+prompt += "\nEnter 'quit' when you're done. "
+players = []
+while True:
+    player = input(prompt)
+    if player == 'quit':
+        break
+    elif player in banned_users:
+        print(player + " is banned!")
+        continue
+    else:
+        players.append(player)
+print("\nYour team:")
+for player in players:
+    print(player)
+
+pets = ['dog', 'cat', 'dog', 'fish', 'cat',
+        'rabbit', 'cat']
+# print(pets)
+
+while 'cat' in pets:
+    pets.remove('cat')
+print(pets)
+
+# using key word arg
+def describe_pet(animal, name):
+    """Display information about a pet."""
+    print("\nI have a " + animal + ".")
+    print("Its name is " + name + ".")
+
+describe_pet(animal='hamster', name='harry')
+describe_pet(name='willie', animal='dog')
+
+# using def value
+def describe_pet(name, animal='dog'):
+    """Display information about a pet."""
+    print("\nI have a " + animal + ".")
+    print("Its name is " + name + ".")
+
+describe_pet('harry', 'hamster')
+describe_pet('willie')
+
+# Collecting an arbitrary number of arguments
+
+def make_pizza(size, *toppings):
+    """Make a pizza."""
+    print("\nMaking a " + size + " pizza.")
+    print("Toppings:")
+    for topping in toppings:
+        print("- " + topping)
+        # Make three pizzas with different toppings.
+
+make_pizza('small', 'pepperoni')
+make_pizza('large', 'bacon bits', 'pineapple')
+make_pizza('medium', 'mushrooms', 'peppers',
+'onions', 'extra cheese')
+
+def build_profile(first, last, **user_info):
+    """Build a user's profile dictionary."""
+    # Build a dict with the required keys.
+    profile = {'first': first, 'last': last}
+    # Add any other keys and values.
+    for key, value in user_info.items():
+        profile[key] = value
+        return profile
+
+# Create two users with different kinds
+# of information.
+user_0 = build_profile('albert', 'einstein',
+location='princeton')
+user_1 = build_profile('marie', 'curie',
+location='paris', field='chemistry')
+print(user_0)
+print(user_1)
+
+import json
+json.dump()
+
+
+# unit testing
+
+import unittest
+from names.full_names import get_full_name
+
+class NamesTestCase(unittest.TestCase):
+    """Tests for names.py."""
+    def test_first_last(self):
+        """Test names like Janis Joplin."""
+        full_name = get_full_name('janis','joplin')
+        # expected value
+        self.assertEqual(full_name,'Janis Joplin')
+
+    # should start with test
+    def test_case(self):
+        print("asd")
+
+unittest.main()
