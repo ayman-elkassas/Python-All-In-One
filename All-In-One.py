@@ -3,6 +3,85 @@
 # with var
 msg = "hello world"
 # print(msg)
+# string[from:to:step]
+msg[4:12:2]
+msg[:7:3]
+msg[8::4]
+msg[::2]
+msg[-1:4:-1]
+msg[::-1]
+list(msg)
+sorted(list(msg))
+msg.partition('and')
+msg.rpartition('and')
+
+a = "sweet \n home alabama"
+
+a.ljust(30)
+a.rjust(30)
+a.rjust(30 ,'*')
+'435'.zfill(10)
+a.isalpha()
+a.strip()
+a.rstrip()
+a.lstrip()
+x = "**abc**"
+print(x.strip('*'))
+
+a= r'C:\some\name'
+a = "sweet \t home alabama"
+a = """ sweet home
+           alabama """
+a , b = 'aaaa' , 'bbbbb'
+print(a,end='')
+print(b)
+
+
+aaa = 'alabama'
+a = "sweet home %s" %aaa
+bbb = 136
+a = "sweet home %d" %bbb
+a = "sweet %s %d" % ( aaa , bbb)
+a = 'numbers %5d %7'
+a = 'numbers %05d' %7
+a="%s has %03d qoute types." %("Python", 2)
+'doesn\'t'
+"doesn't"
+' "Yes," he said.'
+"\"Yes,\" he said."
+'"Isn\'t," she said.'
+
+a.isdigit()
+a.isupper()
+a.islower()
+a.istitle()
+a.endswith('alabama')
+a.startswith('sweet')
+a = ', '.join( ('one', 'two', 'three') )
+'  '.join('hello')
+' '.join([str(i) for i in np.random.randint(10, size=100)])
+
+"The value of pi is {}".format(np.pi)
+'{0} and {1}'.format('red', 'blue')
+'{1} and {0}'.format('red', 'blue')
+"First: {first}. Last: {last}.".format(last='Z', first='A')
+"pi = {0:.3f}".format(np.pi)
+'{:s} {:d} years old'.format('Im',20)
+'|' + '{:^51}'.format('Hello') + '|'
+'{0:10} ==> {1:10d}'.format('name', 56322)
+import re
+email = re.compile('\w+@\w+\.[a-z]{1}')
+text = "To email Guido, try guido@python.org or guido@google.com "
+print(email.findall(text))
+import re
+text = "To email Guido, try guido@python.org or guido@google.com "
+email3=re.compile(r'([\w.]+)@(\w+)\.([a-z]{3})')
+print(email3.findall(text))
+import re
+text = "To email Guido, try guido@python.org or guido@google.com "
+email4=re.compile(r'(?P<user>[\w.]+)@(?P<domain>\w+).(?P<suffix>[a-z]{3})')
+match=email4.match('guido@python.org')
+print(match.groupdict())
 
 # todo:concatenation
 first_name = "ahmed"
